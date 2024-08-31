@@ -1,0 +1,73 @@
+.nav {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 0;
+  }
+
+  &__logo {
+    cursor: pointer;
+    flex: 0.4;
+    color: $white;
+    font-size: 2rem;
+  }
+
+  &__mobile {
+    position: relative;
+
+    &-links {
+      display: none;
+      position: absolute;
+
+      &.open {
+        display: block;
+      }
+    }
+  }
+
+  &__desktop {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-links {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    &-sign_in {
+      border: 0;
+      background: none;
+      color: $white;
+      margin-right: 1rem;
+    }
+
+    &-sign_up {
+      border: 1px solid $white;
+      background: none;
+      color: $white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.7rem;
+    }
+  }
+
+  &__hamburger {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    div {
+      height: 2px;
+      width: 1.2rem;
+      background-color: $white;
+      border-radius: 0.5rem;
+    }
+  }
+}
