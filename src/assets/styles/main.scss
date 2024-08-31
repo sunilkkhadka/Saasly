@@ -10,13 +10,28 @@
   padding: 0;
   font-size: 16px;
   font-family: $DMSans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-rendering: optimizeLegibility;
 }
 
 .wrapper {
   width: 90%;
   margin: 0 auto;
+
+  @media (min-width: $lg) {
+    width: 80%;
+  }
 }
 
-.hero {
-  background-image: url("../svg/BackgroundHeromobile-hero.svg");
+a {
+  text-decoration: none;
+  color: $white;
 }
+
+ul {
+  list-style-type: none;
+}
+
+@import "./partials/nav";
+@import "./partials/hero";

@@ -1,1 +1,21 @@
+// Colors
+$white: #ffffff;
+$lapisBlue: #14358a;
+$frenchBlue: #006fba;
+$stormGrey: #68718b;
+$bluishPurple: #6a36ff;
+$richLilac: #ac5fe6;
+
+// Gradiants
+$primaryButtonGradiant: linear-gradient(45, $bluishPurple, $richLilac);
+
+// Fonts
 $DMSans: "DM Sans", sans-serif;
+
+// Screen Breakpoints
+$xsm: 320px;
+$sm: 540px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1920px;
